@@ -21,4 +21,11 @@ describe('fizzbuzz function', () => {
     expect(fizzbuzz(2)).not.toEqual('Fizz');
     expect(fizzbuzz(5)).not.toEqual('Fizz');
   });
+
+  it('should print Buzz if the input number is only divisible by 5', () => {
+    expect(fizzbuzz(5)).toEqual('Buzz');
+    expect(fizzbuzz(10)).toEqual('Buzz');
+    expect(fizzbuzz(3)).not.toEqual('Buzz');
+    expect(fizzbuzz(6)).not.toEqual('Buzz');
+  });
 });
