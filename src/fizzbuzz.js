@@ -8,7 +8,7 @@ function fizzbuzz(number) {
   } else if (number % 5 === 0) {
     return 'Buzz';
   }
-  return 1;
+  return number;
 }
 
 module.exports = fizzbuzz;
