@@ -1,0 +1,20 @@
+{
+  "name": "tdd-with-node-kata-fizzbuzz",
+  "version": "1.0.0",
+  "description": "Using TDD approach to implement FizzBuzz application in Nodejs and Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest __test__ --watch --verbose"
+  },
+  "keywords": [
+    "Node",
+    "TDD",
+    "Jest",
+    "Kata-FizzBuzz"
+  ],
+  "author": "Nutt Chokwittaya",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
