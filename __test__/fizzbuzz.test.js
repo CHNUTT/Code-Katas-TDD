@@ -34,4 +34,11 @@ describe('fizzbuzz function', () => {
     expect(fizzbuzz(3 * 5 * 7)).toEqual('FizzBuzz');
     expect(fizzbuzz(3 * 5 * 100)).toEqual('FizzBuzz');
   });
+
+  it('shoud print the input number if that number is not divisible by 3 or 5', () => {
+    expect(fizzbuzz(1)).toEqual(1);
+    expect(fizzbuzz(7)).toEqual(7);
+    expect(fizzbuzz(11)).toEqual(11);
+    expect(fizzbuzz(4)).toEqual(4);
+  });
 });
