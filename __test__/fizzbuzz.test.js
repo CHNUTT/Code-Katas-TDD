@@ -28,4 +28,10 @@ describe('fizzbuzz function', () => {
     expect(fizzbuzz(3)).not.toEqual('Buzz');
     expect(fizzbuzz(6)).not.toEqual('Buzz');
   });
+
+  it('should print FizzBuzz if the input number is divisible by both 3 and 5', () => {
+    expect(fizzbuzz(3 * 5 * 2)).toEqual('FizzBuzz');
+    expect(fizzbuzz(3 * 5 * 7)).toEqual('FizzBuzz');
+    expect(fizzbuzz(3 * 5 * 100)).toEqual('FizzBuzz');
+  });
 });
