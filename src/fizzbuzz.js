@@ -1,14 +1,20 @@
 function fizzbuzz(number) {
   if (number < 0) return;
 
-  if (number % 3 === 0 && number % 5 === 0) {
-    return 'FizzBuzz';
-  } else if (number % 3 === 0) {
-    return 'Fizz';
-  } else if (number % 5 === 0) {
-    return 'Buzz';
+  var word = new Array();
+  var isDivisibled = false;
+
+  if (number % 3 === 0) {
+    word.push('Fizz');
+    isDivisibled = true;
   }
-  return number;
+
+  if (number % 5 === 0) {
+    word.push('Buzz');
+    isDivisibled = true;
+  }
+
+  return isDivisibled ? word.join('') : number;
 }
 
 module.exports = fizzbuzz;
